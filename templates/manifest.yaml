@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: user
-        image: "{{ Values.owner.imageRepo }}:{{ Values.owner.imageversion }}"
+        image: "{{ .Values.owner.imageRepo }}:{{ .Values.owner.imageversion }}"
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
